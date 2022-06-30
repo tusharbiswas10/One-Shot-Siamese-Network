@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One shot face recognition</title>
+</head>
+<style>
+    table, th, td {
+        border:1px solid black;
+        border-collapse: collapse;
+    }
+</style>
+<body>
+    <table style="width:100%">
+  <tr>
+    <th colspan="2">
+        <h1>One shot Face Recognition Using Siamese Networkr (Demo)</h1>
+    </th>
+  </tr>
+   <tr>
+    <th colspan="2">
+        Instruction: First enter an image and a name for training the model in the "Training Zone". The name must be unique. Then enter an image in the "Test Zone." Then press the "Done" button. The result will be shown in the result zone.
+    </th>
+  </tr>
+  <tr style="height:200px">
+    <td>
+        <p><h2>Training Zone</h2></p>
+        <form action="/action" method="post">
+            <label for="img">Pic:</label>
+            <input type="file" id="img" name="img" accept="image/*"><br><br>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <button  type="submit">Done</button>
+        </form>
+    </td>
+    <td>
+        <p><h2>Test Zone</h2></p>
+        <form action="/action" method="post">
+            <label for="img">Pic:</label>
+            <input type="file" id="img" name="img" accept="image/*"><br><br>
+            <button type="Done">Select</button>
+        </form>
+    </td>
+  </tr>
+  <tr>
+    <th colspan="2">
+        <p><h2>Result Zone</h2></p>
+    </th>
+  </tr>
+</table>
+</body>
+</html>
