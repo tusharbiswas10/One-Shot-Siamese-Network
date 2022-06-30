@@ -1,0 +1,3 @@
+pip install keras-facenet
+pip install keras
+pip install tensorflow
